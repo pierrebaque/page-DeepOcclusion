@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+
+    <title>Supplementary</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="jumbotron">
+      <div class="container text-center">
+        <h1 class="jumbotron-heading text-center">
+	  Deep Occlusion Reasoning for Multi-Camera Multi-Target Detection
+	</h1>
+
+<!--        <p class="jumbotron-heading text-center">-->
+<!--	  Pierre Baque*, Timur Bagautdinov*, Francois Fleuret, Pascal Fua-->
+<!--	</p>-->
+<!---->
+<!--        <p class="jumbotron-heading text-center">-->
+<!--	  EPFL, IDIAP-->
+<!--	</p>-->
+
+
+	<h5 class="jumbotron-heading">Abstract</h5>
+    <p class="text-muted">
+        People detection in single 2D images has improved greatly in recent years. However, comparatively little of this progress has percolated into multi-camera multi-people tracking algorithms, whose performance still degrades severely when scenes become very crowded. In this work, we introduce a new architecture that combines Convolutional Neural Nets and Conditional Random Fields to explicitly model those ambiguities. One of its key ingredients are high-order CRF terms that model potential occlusions and give our approach its robustness even when many people are present. Our model is trained end-to-end and we show that it outperforms several state-of-art algorithms on challenging scenes.
+	</p>
+
+
+    <h5 class="jumbotron-heading">Detection Results</h5>
+    <p class="text-muted">We provide a two minutes long people detection <a href="videos/out_ksp_1.mp4">video</a> illustrating the behaviour output of our method on the challenging and crowded new ETHZ dataset.</p>
+
+    <div class="row text-center">
+    <!--            <div class="card">
+     <a href="videos/MMKSP_short.mp4">
+     <img src="images/0039.png" alt="People Tracking" width=256 height=160>
+     </a> >-->
+    <p>
+    <video width="640" controls> <source src="videos/out_ksp_1.mp4" type="video/mp4">
+        </video>
+    </p>
+    <p class="text-muted">Deep-Occlusion reasoning + K-Shortest Path Tracking. Also available with <a href="videos/topview.mp4">top-view </a>. </p>
+    
+    <p> </p>
+    <p>   </p>
+
+        <h5 class="jumbotron-heading">Gaussian Mixture Networks</h5>
+    	<p class="text-muted">
+	   <a href="./pdf/gaussians.pdf"> Technical details on learning gaussian mixture networks</a> used in our discriminative model.
+	   </p>
+       
+       <p class="text-muted">
+       <a href="./pdf/gaussians_illustrations.pdf"> Visualization of the output</a> of the discriminative model and the learned Gaussian classes.
+       </p>
+       
+       <div class="row text-center">
+           <a href="./pdf/gaussians_illustrations.pdf">
+           <img src="images/Heatmaps1.png" alt="Semantic Segmentation on Pascal VOC" width=600 height=750>
+            </a>
+        <p>
+        </div>
+
+    </div>
+    
+    <p> </p>
+    <p>   </p>
+    
+    <h5 class="jumbotron-heading">Efficient Implementation of Mean-Fields</h5>
+    <p class="text-muted">
+	   We provide a <a href="./pdf/occlusion_implementation.pdf"> short document</a> which reviews the keys elements towards efficient impementation of Mean-Fields inference with our High-Order potentials.
+       </p>
+       
+       
+       <div class="row text-center">
+           <a href="./pdf/occlusion_implementation.pdf">
+               <img src="images/code_snapshop.png" alt="Implementation" width=600 height=300>
+                   </a>
+           <p>
+       </div>
+       
+       
+       <!--             </div> >-->
+      </div>
+
+    
+    
+
+    </section>
+
+  </body>
+</html>
+
